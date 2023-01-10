@@ -2,21 +2,21 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Rock Paper Scissors</title>
-        <link rel="stylesheet" href="App/style.css">
+        <link rel="stylesheet" href="App/style.css"/>
+        <script defer src="App/script.js"></script> 
     </head>
     <body>
-        <div id="rpsGame">
-            <h1 class="gameText" id="playerText">Player: </h1>
-            <h1 class="gameText" id="computerText">Computer: </h1>
-            <h1 class="gameText" id="resultText">Result: </h1>
-
-            <button class="choiceBtn">ROCK</button>
-            <button class="choiceBtn">PAPER</button>
-            <button class="choiceBtn">SCISSORS</button>
+        
+        <div class="flex-container">
+            <h1>Rock Paper Scissors</h1>
+            <button class="choiceBtn" onclick="game()">Start Game</button>
+            <p class="indicator">This game is played in the console</p>
+            <p class="indicator"> For Windows/Linux Users Press F12</p>
+            <p class="indicator"> For macOS Users Press Option J</p>
         </div>
-        <script src="App/script.js"></script> 
     </body>
 </html>

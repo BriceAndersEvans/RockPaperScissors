@@ -1,25 +1,30 @@
+body {
+  background-color: slategray;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #83bcff;
+}
+
 .choiceBtn {
-    background-color: antiquewhite;
-    line-height: 30px;
-    width: 100px;
+  width: 150px;
+  height: auto;
+  border-radius: 3px;
+  line-height: 30px;
+
+  font-size: large;
+  background-color: antiquewhite;
+  border-color: black;
 }
 
-#rpsGame {
-    font-family: 'Courier New', Courier, monospace;
-    border: 3px slid;
-    padding: 10px;
-    background-color: lightslategray;
-    text-align: center;
+.choiceBtn:hover {
+  cursor: pointer;
 }
 
-#playerText {
-    color: black;
-}
-
-#computerText {
-    color: black;
-}
-
-#resultText {
-    color: goldenrod;
+.indicator {
+  font-weight: 700;
+  padding: 0%S;
 }
