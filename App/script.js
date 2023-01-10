@@ -10,10 +10,13 @@ let result;
 
 choiceBtns.forEach(button => button.addEventListener('click', () => {
     playerChoice = button.textContent;
-    computerChoice();
+    computerAction();
+    playerText.textContent = `Player: ${playerChoice}`;
+    computerText.textContent = `Computer: ${computerChoice}`;
+    resultText.textContent = checkWinner();
 }));
 
-function computerChoice()
+function computerAction()
 {
     const randomNumber = Math.floor(Math.random() * 3) + 1
     
@@ -27,7 +30,27 @@ function computerChoice()
             computerChoice = "PAPER"
         break;
         case 3:
-            computerChoice = "SCISSOR"
+            computerChoice = "SCISSORS"
         break;
+    }
+}
+
+function checkWinner()
+{
+    if(playerChoice == computerChoice)
+    {
+        return "Draw";
+    }
+    else if(computerChoice == "ROCK")
+    {
+        return (playerChoice == "PAPER") ? "Player Wins" : "Player Loses"
+    }
+    else if(computerChoice == "PAPER")
+    {
+        return (playerChoice == "SCISSORS") ? "Player Wins" : "Player Loses"
+    }
+    else if(computerChoice == "SCISSORS")
+    {
+        return (playerChoice == "ROCK") ? "Player Wins" : "Player Loses"
     }
 }

@@ -1,0 +1,25 @@
+.choiceBtn {
+    background-color: antiquewhite;
+    line-height: 30px;
+    width: 100px;
+}
+
+#rpsGame {
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px slid;
+    padding: 10px;
+    background-color: lightslategray;
+    text-align: center;
+}
+
+#playerText {
+    color: black;
+}
+
+#computerText {
+    color: black;
+}
+
+#resultText {
+    color: goldenrod;
+}
