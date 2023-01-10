@@ -3,11 +3,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rock Paper Scissors</title>
-        <script src="rps.js"></script> 
+        <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
+        <div id="rpsGame">
+            <h1 class="gameText" id="playerText">Player: </h1>
+            <h1 class="gameText" id="computerText">Computer: </h1>
+            <h1 class="gameText" id="resultText">Result: </h1>
 
+            <button class="choiceBtn">ROCK</button>
+            <button class="choiceBtn">PAPER</button>
+            <button class="choiceBtn">SCISSOR</button>
+        </div>
+        <script src="rps.js"></script> 
     </body>
 </html>
